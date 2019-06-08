@@ -369,6 +369,7 @@ public class LoginController {
 	}
 	@RequestMapping(value = { "/login/connectionDetails"}, method = RequestMethod.POST)
 	public ModelAndView  connectionDetails(@Valid @ModelAttribute("src_val") String src_val,@Valid @ModelAttribute("usr") String userId,@Valid @ModelAttribute("proj") String project,@Valid @ModelAttribute("jwt") String jwt, ModelMap modelMap,HttpServletRequest request) throws ClassNotFoundException, SQLException, Exception {
+		System.out.println("Parent : src_val"+src_val);
 		UserAccount user = (UserAccount)request.getSession().getAttribute("user");
 		String menu_code=loginService.getMenuCodes(user.getUser_sequence(),project);
 		menu_code=menu_code.replaceAll("\\$\\{user.user_id\\}", user.getUser_id());

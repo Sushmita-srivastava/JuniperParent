@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: juniper-web
 Implementation-Version: 1.0.0
-Built-By: sushmita.srivastava
+Built-By: annu.kumar
 Implementation-Vendor-Id: com.iig.gcp
 Build-Jdk: 1.8.0_202
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo

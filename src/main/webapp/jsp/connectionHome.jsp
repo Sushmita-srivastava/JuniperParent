@@ -3,6 +3,7 @@
 <script>
 	function pass(val) {
 		document.getElementById('src_val').value = val;
+		alert(document.getElementById('src_val').value)
 		var usr=document.getElementById('usr').value;
 		var proj=document.getElementById('proj').value;
 		var jwt=document.getElementById('jwt').value;
